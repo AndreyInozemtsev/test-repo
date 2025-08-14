@@ -1,42 +1,26 @@
-#include <stdio.h>
-
-int sum(int a, int b);
-int substract(int a, int b);
-int divide(int a, int b);
-int multiply(int a, int b);
-
-int main(void) {
-    int a, b;
-    if (scanf("%d %d", &a, &b) != 2) {
-        printf("Error: you need to enter numbers");
-    }
-
-    printf("%d %d %d ", sum(a, b), substract(a, b), multiply(a, b));
-    if (b != 0) {
-        printf("%d\n", divide(a, b));
-    } else {
-        printf("n/a\n");
-    }
-    return 0;
-}
-
+arithmetic.c:23:30: warning: code should be clang-formatted [-Wclang-format-violations]
 int substract(int a, int b) {
+                             ^
+arithmetic.c:24:20: warning: code should be clang-formatted [-Wclang-format-violations]
     return (a - b);
-}
-
+                   ^
+arithmetic.c:27:29: warning: code should be clang-formatted [-Wclang-format-violations]
 int multiply(int a, int b) {
+                            ^
+arithmetic.c:28:20: warning: code should be clang-formatted [-Wclang-format-violations]
     return (a * b);
-}
-
+                   ^
+arithmetic.c:31:27: warning: code should be clang-formatted [-Wclang-format-violations]
 int divide(int a, int b) {
+                          ^
+arithmetic.c:32:20: warning: code should be clang-formatted [-Wclang-format-violations]
     return (a / b);
-}
-
+                   ^
+arithmetic.c:35:24: warning: code should be clang-formatted [-Wclang-format-violations]
 int sum(int a, int b) {
+                       ^
+arithmetic.c:36:20: warning: code should be clang-formatted [-Wclang-format-violations]
     return (a + b);
-} 
-~                                                                                                                                                                                                                
-~                                                                                                                                                                                                                
-~                                                                                                                                                                                                                
-~                                                                                                                                                                                                                
-~                                
+                   ^
+arithmetic.c:37:2: warning: code should be clang-formatted [-Wclang-format-violations]
+}                                                                                                                                                                                                                           
