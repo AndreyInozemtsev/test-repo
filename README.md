@@ -1,80 +1,178 @@
+max.c:3:17: warning: code should be clang-formatted [-Wclang-format-violations]
+int main(void) {
+                ^
+max.c:4:13: warning: code should be clang-formatted [-Wclang-format-violations]
+  int a = 0;
+            ^
+max.c:5:13: warning: code should be clang-formatted [-Wclang-format-violations]
+  int b = 0;
+            ^
+max.c:6:37: warning: code should be clang-formatted [-Wclang-format-violations]
+  if (scanf("%d %d", &a, &b) != 2) {
+                                    ^
+max.c:7:21: warning: code should be clang-formatted [-Wclang-format-violations]
+    printf("n/a\n");
+                    ^
+max.c:8:11: warning: code should be clang-formatted [-Wclang-format-violations]
+  } else {
+          ^
+max.c:9:9: warning: code should be clang-formatted [-Wclang-format-violations]
+    if ( a > b ) {
+        ^
+max.c:9:15: warning: code should be clang-formatted [-Wclang-format-violations]
+    if ( a > b ) {
+              ^
+max.c:9:19: warning: code should be clang-formatted [-Wclang-format-violations]
+    if ( a > b ) {
+                  ^
+max.c:10:25: warning: code should be clang-formatted [-Wclang-format-violations]
+      printf("%d\n", a);
+                        ^
+max.c:11:13: warning: code should be clang-formatted [-Wclang-format-violations]
+    } else {
+            ^
+max.c:12:25: warning: code should be clang-formatted [-Wclang-format-violations]
+      printf("%d\n", b);
+                        ^
+max.c:13:6: warning: code should be clang-formatted [-Wclang-format-violations]
+    }
 
-# Руководство по базовым операциям в GitLab
 
-## 1. Создание репозитория с .gitignore и README
-1. На главной странице GitLab нажмите **"New project"**
-2. Выберите **"Create blank project"**
-3. Заполните:
-   - Project name: `ваш-проект`
-   - Выберите видимость (Private/Public)
-4. В секции **"Initialize repository with"**:
-   - ☑️ Добавить `.gitignore`: выберите шаблон (например, *Python*)
-   - ☑️ Добавить `README.md`
-5. Нажмите **"Create project"**  
-![Шаг создания репозитория](screenshots/create_repo.png)
-
-## 2. Создание веток develop и master
-1. В репозитории перейдите: **Repository → Branches**
-2. Нажмите **"New branch"**
-3. Создайте ветки:
-   - Branch name: `master` (создается автоматически)
-   - Branch name: `develop` (введите вручную)  
-![Создание ветки develop](screenshots/create_develop.png)
-
-## 3. Установка develop как ветки по умолчанию
-1. **Settings → Repository**
-2. Раскройте **"Default branch"**
-3. Выберите `develop` из выпадающего списка
-4. Нажмите **"Save changes"**  
-![Изменение ветки по умолчанию](screenshots/set_default_branch.png)
-
-## 4. Создание issue
-1. В меню выберите **Issues → New issue**
-2. Заполните:
-   - Title: `Создать мануал по GitLab`
-   - Description: Детали задачи
-   - Assignee: Назначьте себя
-3. Нажмите **"Create issue"**  
-![Создание issue](screenshots/create_issue.png)
-
-## 5. Создание ветки из issue
-1. Откройте созданный issue
-2. Нажмите **"Create merge request"** в правом верхнем углу
-3. Система предложит имя ветки вида `1-create-gitlab-manual`
-4. Нажмите **"Create branch"**  
-![Создание ветки из issue](screenshots/branch_from_issue.png)
-
-## 6. Создание Merge Request в develop
-1. После коммитов в ветке нажмите **"Create merge request"** (появится баннер)
-2. Укажите:
-   - Source branch: ваша ветка
-   - Target branch: `develop`
-3. Добавьте описание
-4. Нажмите **"Create merge request"**  
-![Создание MR](screenshots/create_mr.png)
-
-## 7. Ревью и принятие MR
-1. В Merge Request перейдите на вкладку **"Changes"**
-2. Добавьте комментарии к коду (наведите на строку → **Comment**)
-3. После правок нажмите **"Resolve thread"** для каждого комментария
-4. Примите MR: **"Merge"** → **"Merge when pipeline succeeds"**  
-![Принятие MR](screenshots/accept_mr.png)
-
-## 8. Релиз версии в master
-1. Создайте новый MR: `develop` → `master`
-2. После мержа перейдите: **Repository → Tags**
-3. Нажмите **"New tag"**
-4. Укажите:
-   - Tag name: `v1.0.0`
-   - Message: `Стабильная версия мануала`
-5. Нажмите **"Create tag"**  
-![Создание тега](screenshots/create_tag.png)
-
-## 9. Работа с Wiki
-1. В меню проекта выберите **Wiki**
-2. Нажмите **"Create your first page"**
-3. Используйте Markdown-разметку:
-   ```markdown
-   # Заголовок
-   - Список
-   [Ссылка](https://example.com)
+arithmetic.c:8:13: warning: code should be clang-formatted [-Wclang-format-violations]
+int main() {
+            ^
+arithmetic.c:9:12: warning: code should be clang-formatted [-Wclang-format-violations]
+  int a, b;
+           ^
+arithmetic.c:10:5: warning: code should be clang-formatted [-Wclang-format-violations]
+  if(scanf("%d %d", &a, &b) != 2) {
+    ^
+arithmetic.c:10:36: warning: code should be clang-formatted [-Wclang-format-violations]
+  if(scanf("%d %d", &a, &b) != 2) {
+                                   ^
+arithmetic.c:11:48: warning: code should be clang-formatted [-Wclang-format-violations]
+    printf("Error: you need to enter numbers");
+                                               ^
+arithmetic.c:12:4: warning: code should be clang-formatted [-Wclang-format-violations]
+  }
+   ^
+arithmetic.c:14:67: warning: code should be clang-formatted [-Wclang-format-violations]
+  printf("%d %d %d ", sum(a, b), substract(a, b), multiply(a, b));
+                                                                  ^
+arithmetic.c:15:7: warning: code should be clang-formatted [-Wclang-format-violations]
+  if ( b != 0 ) {
+      ^
+arithmetic.c:15:14: warning: code should be clang-formatted [-Wclang-format-violations]
+  if ( b != 0 ) {
+             ^
+arithmetic.c:15:18: warning: code should be clang-formatted [-Wclang-format-violations]
+  if ( b != 0 ) {
+                 ^
+arithmetic.c:16:34: warning: code should be clang-formatted [-Wclang-format-violations]
+    printf("%d\n", divide(a, b));
+                                 ^
+arithmetic.c:17:11: warning: code should be clang-formatted [-Wclang-format-violations]
+  } else {
+          ^
+arithmetic.c:18:21: warning: code should be clang-formatted [-Wclang-format-violations]
+    printf("n/a\n");
+                    ^
+arithmetic.c:19:4: warning: code should be clang-formatted [-Wclang-format-violations]
+  }
+   ^
+arithmetic.c:23:30: warning: code should be clang-formatted [-Wclang-format-violations]
+int substract(int a, int b) {
+                             ^
+arithmetic.c:24:18: warning: code should be clang-formatted [-Wclang-format-violations]
+  return (a - b);
+                 ^
+arithmetic.c:27:29: warning: code should be clang-formatted [-Wclang-format-violations]
+int multiply(int a, int b) {
+                            ^
+arithmetic.c:28:11: warning: code should be clang-formatted [-Wclang-format-violations]
+  return ( a * b );
+          ^
+arithmetic.c:28:17: warning: code should be clang-formatted [-Wclang-format-violations]
+  return ( a * b );
+                ^
+arithmetic.c:28:20: warning: code should be clang-formatted [-Wclang-format-violations]
+  return ( a * b );
+                   ^
+arithmetic.c:31:27: warning: code should be clang-formatted [-Wclang-format-violations]
+int divide(int a, int b) {
+                          ^
+arithmetic.c:32:11: warning: code should be clang-formatted [-Wclang-format-violations]
+  return ( a / b );
+          ^
+arithmetic.c:32:17: warning: code should be clang-formatted [-Wclang-format-violations]
+  return ( a / b );
+                ^
+arithmetic.c:32:20: warning: code should be clang-formatted [-Wclang-format-violations]
+  return ( a / b );
+                   ^
+arithmetic.c:35:24: warning: code should be clang-formatted [-Wclang-format-violations]
+int sum(int a, int b) {
+                       ^
+arithmetic.c:36:18: warning: code should be clang-formatted [-Wclang-format-violations]
+  return (a + b);
+                 ^
+crack.c:3:17: warning: code should be clang-formatted [-Wclang-format-violations]
+int main(void) {
+                ^
+crack.c:4:11: warning: code should be clang-formatted [-Wclang-format-violations]
+  float a;
+          ^
+crack.c:5:11: warning: code should be clang-formatted [-Wclang-format-violations]
+  float b; 
+          ^
+crack.c:6:74: warning: code should be clang-formatted [-Wclang-format-violations]
+  printf("Enter a numbers with floating points separated by a space:\n");
+                                                                         ^
+crack.c:7:7: warning: code should be clang-formatted [-Wclang-format-violations]
+  if ( scanf("%f %f", &a, &b) != 2 ) {
+      ^
+crack.c:7:35: warning: code should be clang-formatted [-Wclang-format-violations]
+  if ( scanf("%f %f", &a, &b) != 2 ) {
+                                  ^
+crack.c:7:39: warning: code should be clang-formatted [-Wclang-format-violations]
+  if ( scanf("%f %f", &a, &b) != 2 ) {
+                                      ^
+crack.c:8:21: warning: code should be clang-formatted [-Wclang-format-violations]
+    printf("n/a\n");
+                    ^
+crack.c:9:11: warning: code should be clang-formatted [-Wclang-format-violations]
+  } else {
+          ^
+crack.c:10:9: warning: code should be clang-formatted [-Wclang-format-violations]
+    if ( a * a + b * b <= 25 ) {
+        ^
+crack.c:10:29: warning: code should be clang-formatted [-Wclang-format-violations]
+    if ( a * a + b * b <= 25 ) {
+                            ^
+crack.c:10:33: warning: code should be clang-formatted [-Wclang-format-violations]
+    if ( a * a + b * b <= 25 ) {
+                                ^
+crack.c:11:26: warning: code should be clang-formatted [-Wclang-format-violations]
+      printf("GOTCHA\n");
+                         ^
+crack.c:12:13: warning: code should be clang-formatted [-Wclang-format-violations]
+    } else {
+            ^
+crack.c:13:24: warning: code should be clang-formatted [-Wclang-format-violations]
+      printf("MISS\n");
+                       ^
+crack.c:14:6: warning: code should be clang-formatted [-Wclang-format-violations]
+    }
+     ^
+crack.c:15:4: warning: code should be clang-formatted [-Wclang-format-violations]
+  }
+   ^
+hello.c:3:15: warning: code should be clang-formatted [-Wclang-format-violations]
+int main(void){
+              ^
+hello.c:3:16: warning: code should be clang-formatted [-Wclang-format-violations]
+int main(void){
+               ^
+hello.c:4:26: warning: code should be clang-formatted [-Wclang-format-violations]
+  printf("Hello, AI!\n");
+                         ^
